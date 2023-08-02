@@ -12,7 +12,7 @@ python chatglm_train_lora.py \
 	--DATA_PATH_TEST /root/autodl-tmp/wld/data/mix/test.json \
 	--DATA_TYPE json \
 	--SAVE_STEPS 100 \
-    --EVAL_STEPS 100 \
+    --EVAL_STEPS 1000 \
 
 wait
 #appreciation
@@ -29,7 +29,7 @@ python chatglm_train_lora.py \
 	--DATA_PATH_TEST /root/autodl-tmp/wld/data/appreciation/train.json \
 	--DATA_TYPE json \
 	--SAVE_STEPS 100 \
-    --EVAL_STEPS 100 \
+    --EVAL_STEPS 1000 \
 
 wait
 #generation
@@ -46,5 +46,5 @@ python chatglm_train_lora.py \
 	--DATA_PATH_TEST /root/autodl-tmp/wld/data/generation/test.json \
 	--DATA_TYPE json \
 	--SAVE_STEPS 100 \
-    --EVAL_STEPS 100 \
+    --EVAL_STEPS 1000 \
 

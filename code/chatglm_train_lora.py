@@ -9,7 +9,7 @@ import os
 from transformers import Trainer, TrainingArguments
 from typing import Optional
 
-
+#重写保存checkpoint的方法
 # class MyTrainer(Trainer):
 #     def _save(self, output_dir: Optional[str] = None, state_dict=None):
 #         # If we are executing this function, we are the process zero, so we don't check for that.
