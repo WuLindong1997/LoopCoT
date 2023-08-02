@@ -26,6 +26,7 @@ from typing import Optional
 #             self.model, os.path.join(output_dir, "chatglm-lora.pt")
 #         )
 
+#load lora config
 def get_lora_config(args):
     config = LoraConfig(
         r=args.LORA_R,
@@ -36,6 +37,7 @@ def get_lora_config(args):
     )
     return config
 
+#load model and tokenizer
 def get_model_and_tokenizer(model_name, config):
     tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
     model = AutoModel.from_pretrained(model_name, trust_remote_code=True).half().cuda()
@@ -68,6 +70,7 @@ def get_masks_and_position_ids(seq, seq_len, context_length, device, gmask=False
             position_ids[context_length - 1 :] = mask_position
     return attention_mask, position_ids
 
+#data process dataloader
 def data_collator(features: list) -> dict:
     len_ids = [len(feature["input_ids"]) for feature in features]
     longest = max(len_ids) + 1
@@ -112,6 +115,7 @@ def data_collator(features: list) -> dict:
         # "position_ids": position_ids,
     }
 
+#data process dataset
 def preprocess(example):
     
     prompt = example["prompt"]
@@ -121,8 +125,7 @@ def preprocess(example):
     input_ids = prompt_ids + target_ids + [tokenizer.eos_token_id]
     return {"input_ids": input_ids, "seq_len": len(prompt_ids)}
 
-
-
+#load trainer
 def get_trainer(args, model, data):
     GRADIENT_ACCUMULATION_STEPS = args.BATCH_SIZE // args.MICRO_BATCH_SIZE
     trainer = Trainer(
@@ -151,6 +154,7 @@ def get_trainer(args, model, data):
 
     return trainer
 
+#load dataset
 def get_dataset(args):
     if args.DATA_TYPE == "json":
         dataset = load_dataset("json", data_files={'train':args.DATA_PATH_TRAIN,'test':args.DATA_PATH_TEST},cache_dir='/root/autodl-tmp/wld/cache')
