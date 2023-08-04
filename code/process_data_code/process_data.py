@@ -3,9 +3,9 @@ import argparse
 import random
 def get_args():
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--poem_path',type=str,default='/root/autodl-tmp/wld/data/poem_test_info.json')
-    arg_parser.add_argument('--type',type=str,choices=['generation','appreciation','mix'],default='generation')
-    arg_parser.add_argument('--save_path',type=str,default='/root/autodl-tmp/wld/data/generation/test.json')
+    arg_parser.add_argument('--poem_path',type=str,default='/root/autodl-tmp/wld/data/poem_train_info.json')
+    arg_parser.add_argument('--type',type=str,choices=['generation','appreciation','mix'],default='mix')
+    arg_parser.add_argument('--save_path',type=str,default='/root/autodl-tmp/wld/data/mix_summarize/train.json')
     args = arg_parser.parse_args()
     return args
 
@@ -19,7 +19,7 @@ def process_poem_generation():
     instruction = "请根据以下提供的信息进行诗歌生成："
     for line in all_poem:
         
-        if random.random()>0.5:
+        if random.random()>1:
             theme = line['keywords']
         else:
             theme = line['chatgpt_appreciation_summary']

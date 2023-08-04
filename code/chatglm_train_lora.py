@@ -175,7 +175,7 @@ if __name__ == "__main__":
     tokenized_datasets = get_dataset(args)
 
 
-    tokenized_datasets = tokenized_datasets.map(function=preprocess)
+    tokenized_datasets = tokenized_datasets.shuffle().map(function=preprocess)
 
 
     trainer = get_trainer(args, model, tokenized_datasets)

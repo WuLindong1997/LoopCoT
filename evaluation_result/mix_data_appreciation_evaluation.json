@@ -1,0 +1,100 @@
+[
+    {
+        "rouge-1": 36.55217398373984,
+        "rouge-2": 10.801670731707317,
+        "rouge-l": 30.30814715447155,
+        "bleu-4": 11.466060975609755,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-1000"
+    },
+    {
+        "rouge-1": 37.15113211382115,
+        "rouge-2": 11.636242682926829,
+        "rouge-l": 30.94209105691057,
+        "bleu-4": 12.269670731707317,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-2000"
+    },
+    {
+        "rouge-1": 38.01552398373983,
+        "rouge-2": 11.605102845528457,
+        "rouge-l": 31.240454878048784,
+        "bleu-4": 12.269137398373985,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-3000"
+    },
+    {
+        "rouge-1": 38.19076260162601,
+        "rouge-2": 12.144648780487804,
+        "rouge-l": 31.947753658536584,
+        "bleu-4": 12.783144715447152,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-4000"
+    },
+    {
+        "rouge-1": 38.05454593495935,
+        "rouge-2": 12.013180487804881,
+        "rouge-l": 31.93315162601626,
+        "bleu-4": 12.971658536585366,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-5000"
+    },
+    {
+        "rouge-1": 37.09575772357724,
+        "rouge-2": 10.946066666666667,
+        "rouge-l": 30.943611788617886,
+        "bleu-4": 11.73933861788618,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-6000"
+    },
+    {
+        "rouge-1": 37.57846585365855,
+        "rouge-2": 11.576865040650407,
+        "rouge-l": 31.002157317073166,
+        "bleu-4": 12.155365040650405,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-7000"
+    },
+    {
+        "rouge-1": 37.436449999999994,
+        "rouge-2": 11.51850243902439,
+        "rouge-l": 30.96181585365854,
+        "bleu-4": 12.329846341463416,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-8000"
+    },
+    {
+        "rouge-1": 37.159797967479676,
+        "rouge-2": 11.557041869918702,
+        "rouge-l": 31.308443089430895,
+        "bleu-4": 12.358899593495934,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-9000"
+    },
+    {
+        "rouge-1": 37.34264512195121,
+        "rouge-2": 11.741310162601625,
+        "rouge-l": 31.378049593495938,
+        "bleu-4": 12.439543089430897,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-10000"
+    },
+    {
+        "rouge-1": 38.02206260162602,
+        "rouge-2": 12.077315853658536,
+        "rouge-l": 31.703413821138213,
+        "bleu-4": 12.913992276422764,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-11000"
+    },
+    {
+        "rouge-1": 37.64208577235772,
+        "rouge-2": 11.952952032520324,
+        "rouge-l": 31.607325609756096,
+        "bleu-4": 12.885304065040652,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-12000"
+    },
+    {
+        "rouge-1": 38.05731991869919,
+        "rouge-2": 12.334348373983737,
+        "rouge-l": 32.34261138211382,
+        "bleu-4": 12.91420447154472,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-13000"
+    },
+    {
+        "rouge-1": 38.22776382113821,
+        "rouge-2": 12.135010975609756,
+        "rouge-l": 32.315992682926826,
+        "bleu-4": 13.022890243902436,
+        "source_checkpoint": "/root/autodl-tmp/wld/model/lora_check_point/apperation_poem_chatglm2/checkpoint-13500"
+    }
+]

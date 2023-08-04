@@ -29,5 +29,6 @@ def parse_args():
     parser.add_argument('--TEMPERATURE', type=int, default=0, help='Temperature when inference')
     parser.add_argument('--LORA_CHECKPOINT_DIR', type=str, default="/root/autodl-tmp/output_model/checkpoint-100", help='Your Lora checkpoint')
     parser.add_argument('--LORA_CHECKPOINT_METRIC_DIR', type=str, default="/root/autodl-tmp/wld/model/lora_check_point/mix_data_chatglm/", help='Your Lora checkpoint tital dir')
+    parser.add_argument('--CKPT', type=str, default="che", help='checkpoint name')
 
     return parser.parse_args()
