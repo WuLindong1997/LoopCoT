@@ -39,5 +39,18 @@
         }
 
         最多数据的generation有所**（more_data_generation 和 mean_ckpt_single_generation.json）（可以说混合一半appreciation 的数据情况）
-        -----等待结果
 
+        more_data_generation(best result)
+        {
+            "rouge-1": 15.510993699186992,
+            "rouge-2": 1.703537743902439,
+            "rouge-l": 12.238842479674796,
+            "bleu-4": 7.437776869918698
+        }
+        mean_ckpt_single_generation
+        {
+            "rouge-1": 14.67471119918699,
+            "rouge-2": 1.4612608333333335,
+            "rouge-l": 11.434773760162601,
+            "bleu-4": 6.598017215447155
+        }
