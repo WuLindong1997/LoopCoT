@@ -8,10 +8,10 @@ with open('/root/autodl-tmp/wld/evaluation_result/single_data_appreciation_evalu
     data2 = json.load(f)
 
 # 提取 ROUGE 和 BLEU 数据
-rouge1_scores1 = [d['rouge-1'] for d in data1][:14]
-rouge2_scores1 = [d['rouge-2'] for d in data1][:14]
-rougeL_scores1 = [d['rouge-l'] for d in data1][:14]
-bleu4_scores1 = [d['bleu-4'] for d in data1][:14]
+rouge1_scores1 = [d['rouge-1'] for d in data1]
+rouge2_scores1 = [d['rouge-2'] for d in data1]
+rougeL_scores1 = [d['rouge-l'] for d in data1]
+bleu4_scores1 = [d['bleu-4'] for d in data1]
 
 rouge1_scores2 = [d['rouge-1'] for d in data2]
 rouge2_scores2 = [d['rouge-2'] for d in data2]
