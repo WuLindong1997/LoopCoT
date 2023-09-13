@@ -1,14 +1,18 @@
 from config import parse_args
+from torch import device
 from peft import LoraConfig, get_peft_model
 from transformers import AutoTokenizer, AutoModel
 import transformers
 import torch
 import random
-from datasets import load_dataset
+import json
+import wandb
 import os
+from datasets import load_dataset
 from transformers import Trainer, TrainingArguments
 from typing import Optional
 
+wandb.init(project="LoopCoT")
 #重写保存checkpoint的方法
 # class MyTrainer(Trainer):
 #     def _save(self, output_dir: Optional[str] = None, state_dict=None):
@@ -127,6 +131,7 @@ def preprocess(example):
 
 #load trainer
 def get_trainer(args, model, data):
+    
     GRADIENT_ACCUMULATION_STEPS = args.BATCH_SIZE // args.MICRO_BATCH_SIZE
     trainer = Trainer(
         model=model,
@@ -148,6 +153,10 @@ def get_trainer(args, model, data):
             save_total_limit=args.SAVE_TOTAL_LIMIT,
             remove_unused_columns=False,
             fp16=True,
+            dataloader_drop_last=True,
+            report_to="wandb",
+            optim="adamw_torch"
+            
         ),
         data_collator=data_collator
     )
@@ -157,7 +166,7 @@ def get_trainer(args, model, data):
 #load dataset
 def get_dataset(args):
     if args.DATA_TYPE == "json":
-        dataset = load_dataset("json", data_files={'train':args.DATA_PATH_TRAIN,'test':args.DATA_PATH_TEST},cache_dir='/root/autodl-tmp/wld/cache')
+        dataset = load_dataset("json", data_files={'train':args.DATA_PATH_TRAIN,'test':args.DATA_PATH_TEST},cache_dir=args.DATA_PATH_CACHE)
     elif args.DATA_TYPE == "txt":
         dataset = load_dataset("text", data_files=args.DATA_PATH)
 
@@ -167,18 +176,14 @@ def get_dataset(args):
 
 if __name__ == "__main__":
     args = parse_args()
-
+    # os.environ["CUDA_VISIBLE_DEVICES"] = '0'
     lora_config = get_lora_config(args)
     model, tokenizer = get_model_and_tokenizer(args.MODEL_NAME, lora_config)
 
-    
     tokenized_datasets = get_dataset(args)
-
-
-    tokenized_datasets = tokenized_datasets.shuffle().map(function=preprocess)
-
-
+    tokenized_datasets = tokenized_datasets.shuffle().map(function=preprocess,num_proc=4)
     trainer = get_trainer(args, model, tokenized_datasets)
+
     # trainer.train(resume_from_checkpoint=False)
     trainer.train()
     model.save_pretrained(args.OUTPUT_DIR + "/model_final")

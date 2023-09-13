@@ -23,6 +23,9 @@ def computer_scores(test_data,peft_model):
             reference = line['prompt']
             res, _ = peft_model.chat(tokenizer=tokenizer, query=reference,max_length=args.CUTOFF_LEN)
             line['res'] = res
+            print(f"\n\nprompt:{reference}\n\n")
+            print(f"\n\ngeneration:{res}\n\n")
+            print("======================================================")
             generation_result.append(line)
     score_dict = {
             "rouge-1": [],

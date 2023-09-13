@@ -6,7 +6,7 @@ torch>=2.0
 mdtex2html
 sentencepiece
 accelerate
-git+https://github.com/huggingface/peft.git
+peft==0.5
 bitsandbytes
 loralib
 scipy

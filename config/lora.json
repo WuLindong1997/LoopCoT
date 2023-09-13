@@ -1,0 +1,6 @@
+{
+    "lora_r": 16,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "lora_bias": "all"
+}

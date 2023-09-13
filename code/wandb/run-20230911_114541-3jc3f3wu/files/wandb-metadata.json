@@ -1,0 +1,211 @@
+{
+    "os": "Linux-5.4.143-2-velinux1-amd64-x86_64-with-glibc2.31",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-09-11T11:45:43.322598",
+    "startedAt": "2023-09-11T11:45:41.875132",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--MICRO_BATCH_SIZE",
+        "6",
+        "--BATCH_SIZE",
+        "36",
+        "--EPOCHS",
+        "30",
+        "--LEARNING_RATE",
+        "2e-5",
+        "--CUTOFF_LEN",
+        "1024",
+        "--LORA_R",
+        "16",
+        "--MODEL_NAME",
+        "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/chatglm2-6b",
+        "--OUTPUT_DIR",
+        "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm",
+        "--DATA_PATH_TRAIN",
+        "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/data/mix_story_all/train.json",
+        "--DATA_PATH_TEST",
+        "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/data/mix_story_all/test.json",
+        "--DATA_PATH_CACHE",
+        "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/cache",
+        "--DATA_TYPE",
+        "json",
+        "--SAVE_STEPS",
+        "100",
+        "--EVAL_STEPS",
+        "100"
+    ],
+    "state": "running",
+    "program": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/code/chatglm_train_lora.py",
+    "codePathLocal": "chatglm_train_lora.py",
+    "codePath": "code/chatglm_train_lora.py",
+    "git": {
+        "remote": "https://github.com/WuLindong1997/LoopCoT.git",
+        "commit": "f689d37b192f1c18ee7aaaddd4cd2484b988b58a"
+    },
+    "email": null,
+    "root": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT",
+    "host": "di-20230905181744-sxgfz",
+    "username": "wulindong",
+    "executable": "/mnt/vepfs/lingxin/Pretrain-data/huangyongkang/miniconda3/envs/wld/bin/python",
+    "cpu_count": 56,
+    "cpu_count_logical": 26,
+    "cpu_freq": {
+        "current": 2294.608,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 19.561111450195312,
+            "used": 5.2755126953125
+        }
+    },
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-80GB",
+            "memory_total": 85198045184
+        },
+        {
+            "name": "NVIDIA A100-SXM4-80GB",
+            "memory_total": 85198045184
+        }
+    ],
+    "memory": {
+        "total": 463.73999786376953
+    }
+}
