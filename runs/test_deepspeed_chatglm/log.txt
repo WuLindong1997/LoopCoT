@@ -1,0 +1,16 @@
+[2023-09-14 05:54:13,731] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-14 05:54:13,732] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-14 05:54:50,483] [INFO] [comm.py:637:init_distributed] cdb=None
+[2023-09-14 05:54:50,484] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2023-09-14 05:54:50,790] [INFO] [comm.py:637:init_distributed] cdb=None
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+ninja: no work to do.
+Time to load cpu_adam op: 2.3419415950775146 seconds
+Time to load cpu_adam op: 2.363171100616455 seconds
+Rank: 0 partition count [2] and sizes[(1949696, False)] 
+Rank: 1 partition count [2] and sizes[(1949696, False)] 
+{'loss': 6.0588, 'learning_rate': 2e-05, 'epoch': 0.34}
+{'eval_loss': 5.12890625, 'eval_runtime': 1.4007, 'eval_samples_per_second': 175.621, 'eval_steps_per_second': 11.422, 'epoch': 0.34}

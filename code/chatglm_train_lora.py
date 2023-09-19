@@ -6,13 +6,12 @@ import transformers
 import torch
 import random
 import json
-import wandb
 import os
 from datasets import load_dataset
 from transformers import Trainer, TrainingArguments
+from transformers import Seq2SeqTrainer
 from typing import Optional
 
-wandb.init(project="LoopCoT")
 #重写保存checkpoint的方法
 # class MyTrainer(Trainer):
 #     def _save(self, output_dir: Optional[str] = None, state_dict=None):
@@ -133,7 +132,34 @@ def preprocess(example):
 def get_trainer(args, model, data):
     
     GRADIENT_ACCUMULATION_STEPS = args.BATCH_SIZE // args.MICRO_BATCH_SIZE
-    trainer = Trainer(
+
+    if args.DEEPSPEED == "false":
+        trainer = Seq2SeqTrainer(
+            model=model,
+            train_dataset=data['train'],
+            eval_dataset=data["test"],
+            args=TrainingArguments(
+                per_device_train_batch_size=args.MICRO_BATCH_SIZE,
+                gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
+                warmup_steps=args.WARMUP_STEPS,
+                num_train_epochs=args.EPOCHS,
+                learning_rate=args.LEARNING_RATE,
+                logging_steps=args.LOGGING_STEPS,
+                evaluation_strategy="steps",
+                eval_steps=args.EVAL_STEPS,
+                save_strategy="steps",
+                save_steps=args.SAVE_STEPS,
+                output_dir=args.OUTPUT_DIR,
+                overwrite_output_dir=True,
+                save_total_limit=args.SAVE_TOTAL_LIMIT,
+                remove_unused_columns=False,
+                fp16=True,
+                optim="adamw_torch",
+            ),
+            data_collator=data_collator
+        )
+    else:
+        trainer = Seq2SeqTrainer(
         model=model,
         train_dataset=data['train'],
         eval_dataset=data["test"],
@@ -154,12 +180,10 @@ def get_trainer(args, model, data):
             remove_unused_columns=False,
             fp16=True,
             dataloader_drop_last=True,
-            report_to="wandb",
-            optim="adamw_torch"
-            
-        ),
+            deepspeed= args.DEEPSPEED
+            ),
         data_collator=data_collator
-    )
+        )
 
     return trainer
 
@@ -184,6 +208,6 @@ if __name__ == "__main__":
     tokenized_datasets = tokenized_datasets.shuffle().map(function=preprocess,num_proc=4)
     trainer = get_trainer(args, model, tokenized_datasets)
 
-    # trainer.train(resume_from_checkpoint=False)
-    trainer.train()
+    trainer.train(resume_from_checkpoint=False)
+    # trainer.train()
     model.save_pretrained(args.OUTPUT_DIR + "/model_final")

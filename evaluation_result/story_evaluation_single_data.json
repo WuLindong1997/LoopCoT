@@ -59,7 +59,7 @@
         "rouge-1": 31.954089224137935,
         "rouge-2": 7.503862931034483,
         "rouge-l": 18.89616422413793,
-        "bleu-4": 6.47097672413793,
+        "bleu-4": 6.12097672413793,
         "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_single_chatglm/checkpoint-300"
     },
     {

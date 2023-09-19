@@ -6,7 +6,7 @@ def parse_args():
     parser.add_argument("--MICRO_BATCH_SIZE", type=int, default=4, help="Per device train batch size")
     parser.add_argument("--BATCH_SIZE", type=int, default=16, help="batch size")
     parser.add_argument('--EPOCHS', type=int, default=30, help='Training epochs')
-    parser.add_argument('--WARMUP_STEPS', type=int, default=100, help='Warmup steps')
+    parser.add_argument('--WARMUP_STEPS', type=int, default=50, help='Warmup steps')
     parser.add_argument('--EVAL_STEPS', type=int, default=100, help='Eval_step')
 
     parser.add_argument('--LEARNING_RATE', type=float, default= 2e-5 , help='Training learning rate')
@@ -31,6 +31,6 @@ def parse_args():
     parser.add_argument('--LORA_CHECKPOINT_DIR', type=str, default="/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_single_chatglm/checkpoint-100", help='Your Lora checkpoint')
     parser.add_argument('--LORA_CHECKPOINT_METRIC_DIR', type=str, default="/root/autodl-tmp/wld/model/lora_check_point/mix_data_chatglm/", help='Your Lora checkpoint tital dir')
     parser.add_argument('--CKPT', type=str, default="che", help='checkpoint name')
-    parser.add_argument('--DEEPSPEED_CONFIG_FILE', type=str, default="/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/config/deepspeed.json", help='deepspeed_config_file path')
+    parser.add_argument('--DEEPSPEED', type=str, default="false", help='deepspeed_config_file path')
 
     return parser.parse_args()
