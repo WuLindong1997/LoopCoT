@@ -1,0 +1,240 @@
+[
+    {
+        "rouge-1": 31.675334051724136,
+        "rouge-2": 8.898355172413794,
+        "rouge-l": 19.903729310344826,
+        "bleu-4": 6.044814655172415,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-3100"
+    },
+    {
+        "rouge-1": 31.962519396551723,
+        "rouge-2": 8.893615086206896,
+        "rouge-l": 20.013703017241376,
+        "bleu-4": 6.58258448275862,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2900"
+    },
+    {
+        "rouge-1": 32.22748922413793,
+        "rouge-2": 8.570100431034485,
+        "rouge-l": 20.022697844827587,
+        "bleu-4": 5.308087068965517,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-500"
+    },
+    {
+        "rouge-1": 31.656130603448272,
+        "rouge-2": 8.700260344827587,
+        "rouge-l": 19.560468103448276,
+        "bleu-4": 6.195306465517241,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2200"
+    },
+    {
+        "rouge-1": 31.861638793103445,
+        "rouge-2": 8.705165086206897,
+        "rouge-l": 19.695312068965517,
+        "bleu-4": 5.922381034482759,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1800"
+    },
+    {
+        "rouge-1": 32.2571625,
+        "rouge-2": 9.069817672413794,
+        "rouge-l": 20.26679353448276,
+        "bleu-4": 6.685605603448276,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-3400"
+    },
+    {
+        "rouge-1": 31.52685086206896,
+        "rouge-2": 8.716675,
+        "rouge-l": 19.76852887931034,
+        "bleu-4": 6.04877025862069,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2000"
+    },
+    {
+        "rouge-1": 32.685645689655175,
+        "rouge-2": 8.856824999999999,
+        "rouge-l": 20.43579698275862,
+        "bleu-4": 5.778921551724138,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-600"
+    },
+    {
+        "rouge-1": 30.707836206896555,
+        "rouge-2": 8.207065086206896,
+        "rouge-l": 18.96348793103448,
+        "bleu-4": 5.289658620689655,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-800"
+    },
+    {
+        "rouge-1": 32.46925,
+        "rouge-2": 8.89595474137931,
+        "rouge-l": 19.889750431034482,
+        "bleu-4": 6.065618534482759,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1300"
+    },
+    {
+        "rouge-1": 32.28483189655172,
+        "rouge-2": 8.94347025862069,
+        "rouge-l": 19.943823706896552,
+        "bleu-4": 6.314126293103449,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-3200"
+    },
+    {
+        "rouge-1": 27.18962155172414,
+        "rouge-2": 5.477693534482759,
+        "rouge-l": 15.853565086206897,
+        "bleu-4": 6.454707758620689,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-100"
+    },
+    {
+        "rouge-1": 32.951171982758616,
+        "rouge-2": 9.057598706896552,
+        "rouge-l": 20.756691379310347,
+        "bleu-4": 6.495736206896551,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-3300"
+    },
+    {
+        "rouge-1": 31.902409482758618,
+        "rouge-2": 8.797261637931035,
+        "rouge-l": 20.322791379310345,
+        "bleu-4": 5.822580603448276,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2400"
+    },
+    {
+        "rouge-1": 31.971327586206897,
+        "rouge-2": 8.580263362068965,
+        "rouge-l": 19.76228146551724,
+        "bleu-4": 6.127980172413793,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-3000"
+    },
+    {
+        "rouge-1": 32.25830603448276,
+        "rouge-2": 8.608377155172413,
+        "rouge-l": 19.788183620689654,
+        "bleu-4": 5.418651293103449,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-700"
+    },
+    {
+        "rouge-1": 32.17009956896552,
+        "rouge-2": 8.93936422413793,
+        "rouge-l": 20.548334051724137,
+        "bleu-4": 6.142330172413792,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2600"
+    },
+    {
+        "rouge-1": 30.82231422413793,
+        "rouge-2": 8.547943103448276,
+        "rouge-l": 19.382932758620694,
+        "bleu-4": 5.918213793103448,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1100"
+    },
+    {
+        "rouge-1": 31.97993232758621,
+        "rouge-2": 8.877541810344827,
+        "rouge-l": 19.637665086206894,
+        "bleu-4": 5.937875,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1700"
+    },
+    {
+        "rouge-1": 31.979978879310345,
+        "rouge-2": 8.791981896551723,
+        "rouge-l": 19.49221465517241,
+        "bleu-4": 6.208746982758621,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2300"
+    },
+    {
+        "rouge-1": 31.330439224137937,
+        "rouge-2": 8.675557327586207,
+        "rouge-l": 19.565990086206895,
+        "bleu-4": 5.722818534482759,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2800"
+    },
+    {
+        "rouge-1": 31.43078189655172,
+        "rouge-2": 8.605932327586208,
+        "rouge-l": 19.570849568965517,
+        "bleu-4": 6.074598275862068,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2500"
+    },
+    {
+        "rouge-1": 31.5386125,
+        "rouge-2": 7.223879310344828,
+        "rouge-l": 18.932196120689653,
+        "bleu-4": 6.30342974137931,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-300"
+    },
+    {
+        "rouge-1": 31.968895689655174,
+        "rouge-2": 8.801796120689655,
+        "rouge-l": 19.508261637931035,
+        "bleu-4": 5.77325775862069,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1900"
+    },
+    {
+        "rouge-1": 32.53330905172414,
+        "rouge-2": 9.038367241379312,
+        "rouge-l": 20.011663362068962,
+        "bleu-4": 5.888129310344828,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1000"
+    },
+    {
+        "rouge-1": 31.219341379310347,
+        "rouge-2": 8.500366810344829,
+        "rouge-l": 18.891222413793106,
+        "bleu-4": 5.17864525862069,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1200"
+    },
+    {
+        "rouge-1": 31.91222370689655,
+        "rouge-2": 9.01794870689655,
+        "rouge-l": 19.82232801724138,
+        "bleu-4": 6.229547844827587,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1600"
+    },
+    {
+        "rouge-1": 31.58231551724138,
+        "rouge-2": 8.76681724137931,
+        "rouge-l": 19.417807758620686,
+        "bleu-4": 5.993774137931034,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1500"
+    },
+    {
+        "rouge-1": 31.298045258620693,
+        "rouge-2": 8.390021120689656,
+        "rouge-l": 19.279980603448276,
+        "bleu-4": 5.25191551724138,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-900"
+    },
+    {
+        "rouge-1": 32.49679353448276,
+        "rouge-2": 8.279229310344828,
+        "rouge-l": 20.758051724137932,
+        "bleu-4": 6.0519025862068965,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-400"
+    },
+    {
+        "rouge-1": 31.99616767241379,
+        "rouge-2": 8.72937327586207,
+        "rouge-l": 19.817543103448276,
+        "bleu-4": 6.234436637931035,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-1400"
+    },
+    {
+        "rouge-1": 31.18019784482759,
+        "rouge-2": 8.436187931034484,
+        "rouge-l": 19.3634400862069,
+        "bleu-4": 5.595441810344827,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2700"
+    },
+    {
+        "rouge-1": 31.43651896551724,
+        "rouge-2": 8.546508620689655,
+        "rouge-l": 19.583208620689653,
+        "bleu-4": 5.73337025862069,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-2100"
+    },
+    {
+        "rouge-1": 29.768416810344824,
+        "rouge-2": 6.253112931034482,
+        "rouge-l": 16.887167672413792,
+        "bleu-4": 5.963619827586207,
+        "source_checkpoint": "/mnt/vepfs/lingxin/Pretrain-data/wulindong/LoopCoT/model/lora_check_point/story_generation_mix_all_chatglm/checkpoint-200"
+    }
+]
