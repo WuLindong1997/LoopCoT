@@ -1,5 +1,6 @@
 # LoopCoT
 运用双向的任务进行微调模型的一种方法，可以有效的提升主任务的表现。
+[LoopCoT Data.pdf](https://github.com/WuLindong1997/LoopCoT/files/14556318/LoopCoT.Data.pdf)
 
 ## Main Result
     .
